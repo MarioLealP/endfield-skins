@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-  <!-- Endfield close glyph - STYLE.md rule 18 X: four arms, EMPTY centre (the two
-       strokes stop short of the middle). Stroke = focused icon colour (#c9ccd3).
-       Unfocused is #7d8089 at .5 opacity. Hover = crimson #d91e36 cell + #fff glyph.
-       State art is embedded in decoration.svg; this file is the bare glyph
-       (Aurorae does not load it). -->
-  <path d="M5 5l5 5M14 14l5 5M19 5l-5 5M10 14l-5 5" fill="none" stroke="#c9ccd3" stroke-width="3" stroke-linecap="butt"/>
-</svg>

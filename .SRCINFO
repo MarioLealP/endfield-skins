@@ -1,0 +1,16 @@
+pkgbase = endfield-skins
+	pkgdesc = clockmost Endfield app skins: kitty, Firefox, Claude Code status line + theme; KDE colours, SDDM and Discord themes (drafts)
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://git.clockmost.com/pkgs/endfield-skins
+	arch = any
+	license = MIT
+	depends = ttf-jetbrains-mono
+	depends = inter-font
+	depends = python
+	optdepends = kitty-clockmost: the patched kitty the tab bar is drawn for (stock kitty falls back to plain labels)
+	optdepends = firefox: the browser skin
+	optdepends = git: the branch segment of the Claude Code status line
+	options = !debug
+
+pkgname = endfield-skins

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-  <!-- Endfield minimize glyph - ds-window-v2 / STYLE.md window button, exact path.
-       Stroke = focused icon colour (#c9ccd3). Unfocused is #7d8089 at .5 opacity,
-       hover is #fff on rgba(255,255,255,.07). State art is embedded in decoration.svg;
-       this file is the bare glyph for reference/tooling (Aurorae does not load it). -->
-  <path d="M5 12h14" fill="none" stroke="#c9ccd3" stroke-width="3" stroke-linecap="butt"/>
-</svg>
