@@ -170,7 +170,8 @@
 .titlebar-close:hover { background: #d91e36 !important; border-color: #d91e36 !important; color: #fff !important; }
 .titlebar-min:hover, .titlebar-max:hover, .titlebar-restore:hover { background: rgba(43,45,49,.10) !important; }
 
-/* ---------- bookmarks: text on paper with tiny black squares; folders = outlined (mock .bms) ---------- */
+/* ---------- bookmarks: text on paper; the mock's tiny black squares replaced on purpose by the real favicons in
+   greyscale, full colour on hover (Mario: "greyscale sounds great"); folders = outlined square (mock .bms) ---------- */
 #PersonalToolbar .bookmark-item {
   font: 12px var(--f-body) !important;
   color: var(--gink) !important;
@@ -178,15 +179,17 @@
   padding: 2px 6px !important;
   margin-inline-end: 10px !important;
 }
-#PersonalToolbar .bookmark-item > .toolbarbutton-icon { display: none !important; }
-#PersonalToolbar .bookmark-item::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-inline-end: 6px;
-  background: var(--gink);
+#PersonalToolbar .bookmark-item:not([container]) > .toolbarbutton-icon {
+  width: 14px !important;
+  height: 14px !important;
+  margin-inline-end: 6px !important;
+  filter: grayscale(1);
 }
+#PersonalToolbar .bookmark-item:hover > .toolbarbutton-icon { filter: none; }
+#PersonalToolbar .bookmark-item[container] > .toolbarbutton-icon { display: none !important; }
 #PersonalToolbar .bookmark-item[container]::before {
+  content: "";
+  margin-inline-end: 6px;
   width: 9px;
   height: 7px;
   background: none;
