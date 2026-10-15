@@ -3,7 +3,7 @@
 # Builds from $startdir (the pkgs/ CI checks out the tagged commit and runs makepkg in place). Data files only.
 
 pkgname=endfield-skins
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc="clockmost Endfield app skins: kitty, Firefox, Claude Code status line + theme; KDE colours, SDDM and Discord themes (drafts)"
 arch=('any')
