@@ -2,7 +2,7 @@
 
 Real Firefox 157 chrome skin for CachyOS / KDE Plasma 6.8 Wayland. Light "paper" toolbars with the faint
 dot grid, `// BROWSER` header strip, black site-identity block in the address bar, vertical tabs styled as
-the mission list (active tab = yellow block), bookmarks toolbar with greyscale favicons that colour on hover,
+the mission list (active tab = yellow block), bookmarks toolbar with colour favicons,
 300px tab sidebar. Colours and sizes are taken hex-for-hex from the approved mockup.
 
 ## Files
@@ -35,7 +35,7 @@ To uninstall: delete `chrome/userChrome.css` and restart.
 | `toolkit.legacyUserProfileCustomizations.stylesheets` | `true` | **required** — load `chrome/userChrome.css` |
 | `sidebar.verticalTabs` | `true` | native vertical tabs in the sidebar (the "mission list") |
 | `sidebar.revamp` | `true` | the new sidebar that hosts vertical tabs; on by default in 157, listed because `sidebar.verticalTabs` depends on it |
-| `browser.toolbars.bookmarks.visibility` | `always` | show the bookmarks toolbar (greyscale favicons live there) |
+| `browser.toolbars.bookmarks.visibility` | `always` | show the bookmarks toolbar (favicons live there) |
 
 Other prefs used in some setups, **not required** by this skin:
 - `sidebar.main.width` — the sidebar width the app remembers (drag the splitter once to whatever looks
@@ -67,7 +67,7 @@ exist on the system; on Linux the visual fallback is DejaVu-ish, so install both
 | `.addr .u` bold host / grey path | **not matched** (see below) — one ink colour on `#urlbar-input` |
 | `.addr .ex .nw2` yellow "2" badge | `.toolbarbutton-badge` (`#FFFA00` on `#111`) |
 | `.bms` bookmarks row | `#PersonalToolbar` (12px body ink, square hover wash `rgba(205,207,212,.8)`) |
-| `.bms` tiny black square markers | **replaced on purpose**: real favicons in greyscale, full colour on hover (WORKLOG decision, Mario: "greyscale sounds great") — `filter: grayscale(1)` / `:hover { filter: none }` |
+| `.bms` tiny black square markers | **replaced on purpose**: real favicons in full colour (was greyscale until 2026-10-15 - Mario: "make them colored, instead of grey scale"); folders keep the outlined square |
 | `.bms .end` "14 BOOKMARKS · OTHER ›" | `#PersonalToolbar::after` — static "BOOKMARKS · OTHER ›" (CSS cannot count) |
 | `.lt` 300px tab sidebar | `#sidebar-main` width pinned to 300px |
 | `.dev` dark "SPACE · CLOCKMOST" bar | `#sidebar-main::before` (30px `#17181b` bar, 700 9px mono `#d8d9de`) |
