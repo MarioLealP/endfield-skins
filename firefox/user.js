@@ -3,9 +3,10 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("sidebar.revamp", true);
 user_pref("sidebar.verticalTabs", true);
 user_pref("browser.toolbars.bookmarks.visibility", "always");
-user_pref("sidebar.visibility", "always-show");
+// expand-on-hover, not always-show: user.js re-applies every start, so always-show undid Mario's toggle (2026-10-16)
+user_pref("sidebar.visibility", "expand-on-hover");
 user_pref("sidebar.main.tools", "");
-user_pref("sidebar.backupState", "{\"command\":\"\",\"panelOpen\":false,\"launcherWidth\":300,\"launcherExpanded\":true,\"launcherVisible\":true}");
+user_pref("sidebar.backupState", "{\"command\":\"\",\"panelOpen\":false,\"launcherWidth\":300,\"launcherExpanded\":false,\"launcherVisible\":true}");
 // window buttons: Plasma's portal publishes no button layout, so Firefox would show close only
 user_pref("ui.GtkCSDMinimizeButton", 1);
 user_pref("ui.GtkCSDMaximizeButton", 1);

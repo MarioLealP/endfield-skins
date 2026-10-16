@@ -2,7 +2,7 @@
    Rewritten 2026-10-13 against Firefox 157's real markup (moz-urlbar / .urlbar-background, #vertical-tabs,
    #sidebar-main) - the worker draft targeted older ids and hid every toolbar icon (fill: none on fill icons).
    Needs user.js: toolkit.legacyUserProfileCustomizations.stylesheets, sidebar.revamp + sidebar.verticalTabs,
-   bookmarks toolbar "always", sidebar expanded (sidebar.backupState) - see README.
+   bookmarks toolbar "always", sidebar expand-on-hover, starts collapsed (sidebar.visibility + backupState) - see README.
    Not possible in CSS: the tab's second line (url · age), bold host / grey path in the URL. */
 
 :root {
