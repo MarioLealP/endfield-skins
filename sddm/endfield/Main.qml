@@ -486,7 +486,7 @@ Rectangle {
                         strokeWidth: 2.2
                         strokeColor: root.ink2
                         fillColor: "transparent"
-                        cap: ShapePath.FlatCap
+                        capStyle: ShapePath.FlatCap
                         PathSvg { path: "M4 9h16v10H4z M8 9V5h8v4" }
                     }
                 }
@@ -515,7 +515,7 @@ Rectangle {
                         strokeWidth: 2.2
                         strokeColor: root.ink2
                         fillColor: "transparent"
-                        cap: ShapePath.FlatCap
+                        capStyle: ShapePath.FlatCap
                         PathSvg { path: "M12 3v9 M6.3 7.5a8 8 0 1 0 11.4 0" }
                     }
                 }
@@ -814,7 +814,7 @@ Rectangle {
                         strokeWidth: 3
                         strokeColor: root.plateInk
                         fillColor: "transparent"
-                        cap: ShapePath.FlatCap
+                        capStyle: ShapePath.FlatCap
                         PathSvg { path: "M5 12h14M13 6l6 6-6 6" }
                     }
                 }
