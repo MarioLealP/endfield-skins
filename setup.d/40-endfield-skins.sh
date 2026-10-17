@@ -6,6 +6,9 @@
 set -eu
 S=/usr/share/endfield-skins
 
+# parts switched off by name in ~/.config/clockmost/setup-off (one per line), e.g. firefox-skin
+off() { grep -qsx "$1" "${XDG_CONFIG_HOME:-$HOME/.config}/clockmost/setup-off"; }
+
 # link $2 -> $1; a real file already there is kept as .bak-<date>
 link() {
     if [ -e "$2" ] && [ ! -L "$2" ]; then mv "$2" "$2.bak-$(date +%Y%m%d%H%M)"; fi
@@ -37,6 +40,10 @@ PY
 echo "   Claude Code: Endfield theme + status line"
 
 # Firefox: every profile (old and XDG locations) gets the userChrome + our user.js block
+if off firefox-skin; then
+    echo "   Firefox: skin off (setup-off) - left alone"
+    exit 0
+fi
 n=0
 for prefs in "$HOME"/.mozilla/firefox/*/prefs.js "$HOME"/.config/mozilla/firefox/*/prefs.js; do
     [ -e "$prefs" ] || continue

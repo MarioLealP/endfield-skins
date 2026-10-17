@@ -8,6 +8,8 @@ One folder per app. Each has a README.md: what file goes where, what could not b
 - **on** (setup switches it on, files linked from `/usr/share/endfield-skins`, so updates flow in): kitty (theme,
   tab bar, `clockmost.conf` = Windows keys + cursor trail), Claude Code (status line + `custom:endfield` theme - only
   if you have none set), Firefox (userChrome + a managed `user.js` block, every profile).
+- **opt out** per user: a line `firefox-skin` in `~/.config/clockmost/setup-off` makes setup leave Firefox alone
+  (it doesn't undo a skin already applied).
 - **drafts** (installed, not switched on - their skin passes are still to do): KDE colours
   (`/usr/share/color-schemes/EndfieldDark.colors`), SDDM (`/usr/share/sddm/themes/endfield`), Discord
   (`/usr/share/endfield-skins/discord/endfield.theme.css`).
