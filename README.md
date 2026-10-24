@@ -1,5 +1,5 @@
 # endfield-skins - the clockmost Endfield app skins
-Real config files translated from the approved HTML mockups in ~/ref/mocks/components.
+Real config files translated from the approved HTML mockups in [clockmost-desktop](https://git.clockmost.com/Benylin/clockmost-desktop).
 One folder per app. Each has a README.md: what file goes where, what could not be matched.
 
 ## Package (pkgs/endfield-skins, `[clockmost]` repo)
